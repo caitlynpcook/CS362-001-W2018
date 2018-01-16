@@ -29,18 +29,18 @@ public class TimeTable {
      *  given values are invalid, or if lastDay is not after firstDay.
      **/
 	  public LinkedList<CalDay> getApptRange(LinkedList<Appt> appts,GregorianCalendar firstDay, GregorianCalendar lastDay)throws DateOutOfRangeException{
-		  
+
 		     //Create a linked list of calendar days <CalDay> to return
 	        LinkedList<CalDay> calDays = new LinkedList<CalDay>();
-	     
 
-	        
+
+
 	        //Make sure that the first day is before the last day
 	        if (!firstDay.before(lastDay)) {
 	        	throw new DateOutOfRangeException ("Second date specified is not  before the first date specified.");
 	        }
-	        
-	        
+
+
 	        //Create the first CalDay object with the starting date and add to list
 	        GregorianCalendar nextDay = (GregorianCalendar) firstDay.clone();
 	        while (nextDay.before(lastDay)) {
@@ -48,9 +48,9 @@ public class TimeTable {
 	            calDays.add(new CalDay(nextDay));
 	            nextDay.add(nextDay.DAY_OF_MONTH, 1);
 	        }
-	        
+
 	        //Retrieve the appts - <appt> 
-		for (int i = 0; i < appts.size(); i++) {
+		for (int i = 0; i <= appts.size(); i++) { // error: should be <, causes out of bounds error
 			Appt appt=appts.get(i);
 			if(!appt.getValid()) continue;
 			// Figure out which days the appointment occurs on
@@ -102,7 +102,7 @@ public class TimeTable {
 	        
 	        //If the first occurrence is after the last day, then it doesn't matter
 	        //when it recurs because those dates must be after the last day too
-	        if (!occurrenceDay.before(lastDay)) {
+	        if (occurrenceDay.before(lastDay)) { // error, forgot ! to invert
 	            return result;
 	        }
 	        
@@ -122,7 +122,7 @@ public class TimeTable {
 	                    break;
 	                }
 	                            
-	                //Keep cycling while the occurence day is in range
+	                //Keep cycling while the occurrence day is in range
 	                if (!occurrenceDay.before(lastDay)) {
 	                    break;
 	                }
@@ -163,7 +163,7 @@ public class TimeTable {
 	                    nextDay.add(nextDay.DAY_OF_MONTH, 1);
 	                    int newDayOfWeek = nextDay.get(nextDay.DAY_OF_WEEK);
 	                
-	                    for (int i = 0; i < recurDays.length; i++) {
+	                    for (int i = 1; i < recurDays.length; i++) { // error: should be 0
 	                        //If the calendar is set to a day of the week that the
 	                        //appt recurs on then return that day.
 	                        if (recurDays[i] == newDayOfWeek) {

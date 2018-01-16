@@ -108,11 +108,12 @@ public class Appt implements  Comparable<Appt>{
   
     /**
      * @sets valid to true if the appointment is valid
+     * Error: startHour is accepted up to 24, where it should be 23
      */
     private void isValid() {
     	int NumDaysInMonth= CalendarUtil.NumDaysInMonth(startYear,startMonth-1);
     				
-    	if(startHour<0 || startHour>23)
+    	if(startHour<0 || startHour>24)
     		this.valid=false;
     	else
         	if(startMinute<0 || startMinute>59)

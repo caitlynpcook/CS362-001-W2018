@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="calendar.ApptTest" time="0.005" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="calendar.ApptTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.1+11"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9.0.1\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:/Users/Caitlyn/Documents/Classes/CS 362/CS362-001-W2018/Calendar"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:/Users/Caitlyn/Documents/Classes/CS 362/CS362-001-W2018/projects/cookcai/assignment-1/Calendar"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Caitlyn\Documents\Classes\CS 362\CS362-001-W2018\Calendar"/>
+    <property name="user.dir" value="C:\Users\Caitlyn\Documents\Classes\CS 362\CS362-001-W2018\projects\cookcai\assignment-1\Calendar"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="9.0.1+11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -47,7 +47,7 @@
     <property name="java.class.path" value="C:/Users/Caitlyn/Downloads/apache-maven-3.5.2-bin/apache-maven-3.5.2/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="9"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-9.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,6 +63,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="calendar.ApptTest" name="test01" time="0.005"/>
+  <testcase classname="calendar.ApptTest" name="test01" time="0.003"/>
   <testcase classname="calendar.ApptTest" name="test02" time="0"/>
 </testsuite>
