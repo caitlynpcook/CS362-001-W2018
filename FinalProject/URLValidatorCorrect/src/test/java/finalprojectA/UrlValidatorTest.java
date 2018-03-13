@@ -93,16 +93,18 @@ protected void setUp() {
       do {
           StringBuilder testBuffer = new StringBuilder();
          boolean expected = true;
+         // construct url
          for (int testPartsIndexIndex = 0; testPartsIndexIndex < testPartsIndex.length; ++testPartsIndexIndex) {
             int index = testPartsIndex[testPartsIndexIndex];
-            ResultPair[] part = (ResultPair[]) testObjects[testPartsIndexIndex];
-            testBuffer.append(part[index].item);
-            expected &= part[index].valid;
+            ResultPair[] part = (ResultPair[]) testObjects[testPartsIndexIndex]; // find part of url and value
+            testBuffer.append(part[index].item); // add piece onto full url
+            expected &= part[index].valid; // update truth value in case
          }
          String url = testBuffer.toString();
          boolean result = urlVal.isValid(url);
-         if(result == true)
-        	 System.out.println(url);
+         if(result == true) {
+            System.out.println("\tValid: " + url); // printing valid urls
+         }
          assertEquals(url, expected, result);
          if (printStatus) {
             if (printIndex) {

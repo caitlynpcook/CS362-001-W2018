@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="calendar.TimeTableRandomTest" time="29.976" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="finalprojectA.UrlValidatorTest" time="0.489" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.1+11"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9.0.1\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:/Users/Caitlyn/Documents/Classes/CS 362/CS362-001-W2018/projects/cookcai/assignment-4/Calendar"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:/Users/Caitlyn/Documents/Classes/CS 362/CS362-001-W2018/FinalProject/URLValidatorCorrect"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Caitlyn\Documents\Classes\CS 362\CS362-001-W2018\projects\cookcai\assignment-4\Calendar"/>
+    <property name="user.dir" value="C:\Users\Caitlyn\Documents\Classes\CS 362\CS362-001-W2018\FinalProject\URLValidatorCorrect"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="9.0.1+11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -63,5 +63,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="calendar.TimeTableRandomTest" name="randomtest" time="29.976"/>
+  <testcase classname="finalprojectA.UrlValidatorTest" name="testValidateUrl" time="0.012"/>
+  <testcase classname="finalprojectA.UrlValidatorTest" name="testIsValidScheme" time="0.007"/>
+  <testcase classname="finalprojectA.UrlValidatorTest" name="testIsValid" time="0.47"/>
+  <testcase classname="finalprojectA.UrlValidatorTest" name="testValidator202" time="0"/>
+  <testcase classname="finalprojectA.UrlValidatorTest" name="testValidator204" time="0"/>
 </testsuite>
